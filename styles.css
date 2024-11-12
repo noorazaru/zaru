@@ -1,3 +1,14 @@
+/* Alustava tila ennen siirtymistä */
+.page-transition {
+    opacity: 1;
+    transition: opacity 0.5s ease; /* Häivytystehoste kestää 0.5 sekuntia */
+}
+
+/* Tila siirtymisen aikana */
+.page-transition.fade-out {
+    opacity: 0; /* Näkyvyys katoaa häivytyksellä */
+}
+
 /* Pääotsikon tyyli */
 .main-header {
     padding: 20px;
