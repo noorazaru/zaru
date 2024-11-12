@@ -62,3 +62,9 @@ main {
     font-size: 1em;
     color: #666;
 }
+@font-face {
+    font-family: 'OmaFontti';
+    src: url('fonts/OmaFontti.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
