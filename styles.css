@@ -1,4 +1,11 @@
-/* Valikkosymbolin tyyli */
+/* Nollaa marginaalit ja tyylit */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Burgeri valikkosymbolin tyyli */
 .menu-icon {
     position: fixed;
     top: 20px;
