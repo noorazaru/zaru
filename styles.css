@@ -1,3 +1,30 @@
+/* Pääotsikon tyyli */
+.main-header {
+    padding: 20px;
+    text-align: left;
+}
+
+.main-header h1 {
+    font-size: 3em; /* Suurempi fonttikoko */
+    font-weight: bold;
+    color: #111;
+    margin-bottom: 5px;
+}
+
+.subheading {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Ohut viiva pääotsikon alle */
+.header-line {
+    border: none;
+    border-top: 2px solid #ddd; /* Ohut viiva */
+    width: 100%; /* Viiva ulottuu koko sisältöalueen leveydelle */
+    margin-bottom: 20px;
+}
+
 /* Projektin otsikko */
 .project-header {
     padding: 20px;
