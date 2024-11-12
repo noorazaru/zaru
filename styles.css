@@ -227,7 +227,7 @@ main {
     margin: 40px 0;
     background-color: #fff;
     border: 1px solid #ddd;
-    border-radius: 8px;
+    border-radius: 0px;
     overflow: hidden;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s ease;
@@ -254,10 +254,4 @@ main {
 .description p {
     font-size: 1em;
     color: #666;
-}
-@font-face {
-    font-family: 'XoxotypepersonaluseExtrabold-ywRje.otf';
-    src: url('XoxotypepersonaluseExtrabold-ywRje.otf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
 }
