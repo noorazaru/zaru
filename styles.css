@@ -20,6 +20,7 @@
     font-size: 1.2em; /* Lisää kokoa, jotta teksti on helpommin luettavaa */
     line-height: 1.6; /* Parantaa luettavuutta */
     color: #333; /* Selkeä ja tyylikäs tummanharmaa */
+    text-align: left; /* Varmistaa vasemman reunan tasauksen */
 }
 
 /* Leipäteksti */
@@ -27,6 +28,7 @@
     font-size: 1.3em; /* Tekee tekstistä vielä hieman isomman */
     color: #333;
     margin-bottom: 20px;
+    text-align: left; /* Varmistaa vasemman reunan tasauksen myös p-elementeille */
 }
 
 /* Otsikko */
