@@ -16,6 +16,27 @@
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    font-family: 'Roboto', sans-serif; /* Käytetään Roboto-fonttia */
+    font-size: 1.2em; /* Lisää kokoa, jotta teksti on helpommin luettavaa */
+    line-height: 1.6; /* Parantaa luettavuutta */
+    color: #333; /* Selkeä ja tyylikäs tummanharmaa */
+}
+
+/* Leipäteksti */
+.project-section p {
+    font-size: 1.3em; /* Tekee tekstistä vielä hieman isomman */
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Otsikko */
+.project-header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #111; /* Tummempi otsikkoväri */
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 .project-section {
