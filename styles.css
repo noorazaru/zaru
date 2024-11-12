@@ -1,7 +1,7 @@
 /* Alustava tila ennen siirtymistä */
 .page-transition {
     opacity: 1;
-    transition: opacity 0.5s ease; /* Häivytystehoste kestää 0.5 sekuntia */
+    transition: opacity 0.6s ease; /* Häivytystehoste kestää 0.6 sekuntia */
 }
 
 /* Tila siirtymisen aikana */
@@ -55,7 +55,7 @@
     margin: 0 auto;
     padding: 20px;
     font-family: 'Roboto', sans-serif; /* Käytetään Roboto-fonttia */
-    font-size: 1.2em; /* Lisää kokoa, jotta teksti on helpommin luettavaa */
+    font-size: 1em; /* Lisää kokoa, jotta teksti on helpommin luettavaa */
     line-height: 1.6; /* Parantaa luettavuutta */
     color: #333; /* Selkeä ja tyylikäs tummanharmaa */
     text-align: left; /* Varmistaa vasemman reunan tasauksen */
@@ -63,9 +63,9 @@
 
 /* Leipäteksti */
 .project-section p {
-    font-size: 1.3em; /* Tekee tekstistä vielä hieman isomman */
+    font-size: 1em; /* Tekee tekstistä vielä hieman isomman */
     color: #333;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left; /* Varmistaa vasemman reunan tasauksen myös p-elementeille */
 }
 
@@ -80,8 +80,8 @@
 }
 
 .project-section {
-    margin-bottom: 40px;
-    text-align: center;
+    margin-bottom: 10px;
+    text-align: left;
 }
 
 .project-section p {
@@ -93,7 +93,7 @@
 .project-section img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 0px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -138,10 +138,10 @@
 /* Burgerivalikon symbolin tyyli */
 .menu-icon {
     position: fixed;
-    top: 20px;
-    right: 20px;
-    width: 25px;
-    height: 20px;
+    top: 10px;
+    right: 10px;
+    width: 15px;
+    height: 10px;
     cursor: pointer;
     z-index: 10;
 }
@@ -151,7 +151,7 @@
     height: 3px;
     background-color: #333; /* Tummempi väri */
     margin: 3px 0; /* Väli palkkien välillä */
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 /* Kapea ja vaalea valikko */
@@ -202,13 +202,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: XoxotypepersonaluseExtrabold-ywRje.otf, sans-serif;
-    color: #333;
-    background-color: #f5f5f5;
-    text-align: center;
 }
 
 header {
