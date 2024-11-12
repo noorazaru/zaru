@@ -23,27 +23,6 @@
 
     <!-- Muut etusivun osiot -->
 </body>
-    <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const transitionElements = document.querySelectorAll(".project-link");
-
-        transitionElements.forEach(function (element) {
-            element.addEventListener("click", function (event) {
-                event.preventDefault();
-                const targetUrl = this.getAttribute("href");
-
-                // Lisää fade-out-luokka siirtymän aloittamiseksi
-                document.body.classList.add("fade-out");
-
-                // Odota siirtymän päättymistä ennen uuden sivun latausta
-                setTimeout(function () {
-                    window.location.href = targetUrl;
-                }, 500); // Vastaava aika kuin CSS-siirtymässä (0.5s)
-            });
-        });
-    });
-</script>
-
 </html>
 
     <!-- Piilotettu valikko -->
@@ -66,12 +45,35 @@
         }
     </script>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const transitionElements = document.querySelectorAll(".project-link");
+
+        transitionElements.forEach(function (element) {
+            element.addEventListener("click", function (event) {
+                event.preventDefault();
+                const targetUrl = this.getAttribute("href");
+
+                // Lisää fade-out-luokka siirtymän aloittamiseksi
+                document.body.classList.add("fade-out");
+
+                // Odota siirtymän päättymistä ennen uuden sivun latausta
+                setTimeout(function () {
+                    window.location.href = targetUrl;
+                }, 500); // Vastaava aika kuin CSS-siirtymässä (0.5s)
+            });
+        });
+    });
+</script>
+
 </html>
 
     <!-- Projektit -->
     <main>
         <section class="project">
-            <a href="project1.html">
-               <img src="visu1finalfinal.png" alt="Kuvaus">
-            </a>
-        </section>
+    <a href="project1.html" class="project-link">
+        <h2>Projekti 1</h2>
+        <img src="visu1finalfinal.png" alt="Projektin 1 kuva">
+    </a>
+</section>
+
