@@ -3,7 +3,7 @@
     width: 100%; /* Asettaa kuvan täyttämään projektikortin leveys */
     height: 200px; /* Kiinteä korkeus, jotta kaikki kuvat ovat saman korkuisia */
     object-fit: cover; /* Rajaa kuvan, jotta se täyttää alueen ilman vääristymistä */
-    border-radius: 8px; /* Hieman pyöristetyt kulmat, valinnainen */
+    border-radius: 0px; /* Hieman pyöristetyt kulmat, valinnainen */
 }
 /* Yleiset tyylit otsikoille ja leipäteksteille */
 
