@@ -1,11 +1,11 @@
-/* Yhtenäiset kuvat kaikille projekteille */
+/* Yhtenäiset projektikuvat */
 .project img {
-    width: 100%; /* Asettaa kuvan täyttämään projektikortin leveyden */
-    max-width: 300px; /* Määritä haluamasi leveys, esim. 300px */
-    height: 200px; /* Kiinteä korkeus, jotta kaikki kuvat ovat saman korkuisia */
-    object-fit: cover; /* Rajaa kuvan täyttämään alue vääristymättä */
-    border-radius: 0px; /* Hieman pyöristetyt kulmat (valinnainen) */
-    display: block; /* Varmistaa, ettei kuvassa ole ylimääräistä marginaalia */
+    width: 100%; /* Varmistaa, että kuva täyttää projektikortin */
+    height: 200px; /* Kiinteä korkeus, jotta kuvat ovat saman korkuisia */
+    object-fit: cover; /* Rajaa kuva niin, että se täyttää koko alueen */
+    max-width: 300px; /* Määritä haluttu leveys, esim. 300px */
+    border-radius: 8px; /* Pyöristetyt kulmat (valinnainen) */
+    display: block; /* Poistaa mahdolliset ylimääräiset marginaalit */
 }
 /* Yleiset tyylit otsikoille ja leipäteksteille */
 
