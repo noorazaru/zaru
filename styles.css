@@ -1,10 +1,21 @@
+/* Poistaa mahdolliset reunukset ja varjostukset projektikuvista */
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    max-width: 300px;
+    border: none; /* Poistaa reunukset */
+    box-shadow: none; /* Poistaa varjostuksen */
+    display: block;
+}
+
 /* Yhtenäiset projektikuvat */
 .project img {
     width: 100%; /* Varmistaa, että kuva täyttää projektikortin */
     height: 200px; /* Kiinteä korkeus, jotta kuvat ovat saman korkuisia */
     object-fit: cover; /* Rajaa kuva niin, että se täyttää koko alueen */
     max-width: 300px; /* Määritä haluttu leveys, esim. 300px */
-    border-radius: 8px; /* Pyöristetyt kulmat (valinnainen) */
+    border-radius: 0px; /* Pyöristetyt kulmat (valinnainen) */
     display: block; /* Poistaa mahdolliset ylimääräiset marginaalit */
 }
 /* Yleiset tyylit otsikoille ja leipäteksteille */
