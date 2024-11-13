@@ -1,3 +1,15 @@
+/* Yleiset tyylit otsikoille ja leipäteksteille */
+
+/* Kaikki otsikot Helvetica-paksulla */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+/* Leipätekstit Optima-fontilla */
+body, p, .project-subheading {
+    font-family: 'Optima', sans-serif;
+}
 /* Posterimainen liikutettava teksti */
 .marquee-text {
     font-size: 2em; /* Isompi fonttikoko */
