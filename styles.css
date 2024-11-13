@@ -17,31 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 body, p, .project-subheading {
     font-family: 'Optima', sans-serif;
 }
-/* Posterimainen liikutettava teksti */
-.marquee-text {
-    font-size: 2em; /* Isompi fonttikoko */
-    font-weight: bold;
-    color: #e02c2c; /* Ketsupin punainen */
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-}
 
-@keyframes scroll-left {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-.marquee-text {
-    display: inline-block;
-    animation: scroll-left 15s linear infinite; /* Hidas, jatkuva liike */
-}
 /* Alustava tila ennen siirtymistä */
 .page-transition {
     opacity: 1;
