@@ -1,3 +1,10 @@
+/* Projektikuvat etusivulla */
+.project img {
+    width: 100%; /* Asettaa kuvan täyttämään projektikortin leveys */
+    height: 200px; /* Kiinteä korkeus, jotta kaikki kuvat ovat saman korkuisia */
+    object-fit: cover; /* Rajaa kuvan, jotta se täyttää alueen ilman vääristymistä */
+    border-radius: 8px; /* Hieman pyöristetyt kulmat, valinnainen */
+}
 /* Yleiset tyylit otsikoille ja leipäteksteille */
 
 /* Kaikki otsikot Helvetica-paksulla */
@@ -106,33 +113,6 @@ body, p, .project-subheading {
     text-align: left; /* Varmistaa vasemman reunan tasauksen myös p-elementeille */
 }
 
-/* Otsikko */
-.project-header h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    font-family: 'Roboto', sans-serif;
-    color: #111; /* Tummempi otsikkoväri */
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.project-section {
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-.project-section p {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-.project-section img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 0px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
 
 /* Contact-sivun tyyli */
 .contact {
