@@ -78,3 +78,20 @@
     color: #fff;
     text-align: center;
 }
+
+.development-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
+    text-align: center;
+}
+
+.development-note a {
+    color: #555;
+    text-decoration: underline;
+}
+
+.development-note a:hover {
+    color: #333;
+}
+
