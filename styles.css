@@ -1,11 +1,51 @@
+/* Yleiset tyylit */
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     color: #333;
     background-color: #f9f9f9;
+    scroll-behavior: smooth; /* Smooth scroll */
 }
 
+h1, h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigointi */
+.main-nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #222;
+    padding: 10px;
+    margin: 0;
+}
+
+.main-nav li {
+    margin: 0 15px;
+}
+
+.main-nav a {
+    color: #fff;
+    font-size: 1em;
+}
+
+.main-nav a:hover {
+    color: #4CAF50;
+    transition: color 0.3s ease;
+}
+
+/* Yläosio */
 .main-header {
     text-align: center;
     padding: 50px 20px;
@@ -23,65 +63,68 @@ body {
     font-weight: 300;
 }
 
-.intro, .projects-preview, .services, .contact {
-    max-width: 800px;
+/* Projektiruudukko */
+.projects-section {
+    max-width: 1200px;
     margin: 40px auto;
     padding: 20px;
-    background: #fff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
+}
+
+.project {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project img {
     width: 100%;
-    height: auto;
-    border-radius: 5px;
+    height: 200px;
+    object-fit: cover;
 }
 
 .project p {
-    text-align: center;
-    font-size: 1em;
-    margin-top: 10px;
-}
-
-.services-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.service {
-    flex: 1 1 calc(33.333% - 20px);
-    background: #f1f1f1;
     padding: 10px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: bold;
+    font-size: 1em;
+    background-color: #f5f5f5;
 }
 
-.contact {
+.project:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Yhteystiedot */
+.contact-section {
     text-align: center;
     padding: 20px;
-    background: #222;
+    background-color: #222;
     color: #fff;
 }
 
-.contact a {
+.contact-section a {
     color: #4CAF50;
-    text-decoration: none;
 }
 
-.contact a:hover {
+.contact-section a:hover {
     text-decoration: underline;
+}
+
+/* Fade-in/Fade-out */
+.page-transition {
+    opacity: 1;
+    transition: opacity 0.6s ease;
+}
+
+.page-transition.fade-out {
+    opacity: 0;
 }
