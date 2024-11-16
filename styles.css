@@ -100,12 +100,13 @@ a {
 /* Intro-osio */
 .intro-section {
     height: 100vh;
-    background: url('Happi1.png') no-repeat center center/cover;
+    background: url('images/happi/Happi1.png') no-repeat center center/cover;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
 }
+
 
 .intro-title {
     font-size: 3em;
