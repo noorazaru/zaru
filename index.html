@@ -1,88 +1,52 @@
 <!DOCTYPE html>
 <html lang="fi">
-<body class="page-transition">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NOORA ZARUNII VARONEN - Portfolio - </title>
+    <title>ZARU - Arkkitehtitoimisto</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Burgerivalikkosymboli -->
-    <div class="menu-icon" onclick="toggleMenu()">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-    </div>
-    <!-- Otsikko, viiva ja nimi -->
-<body>
+    <!-- Yläosio -->
     <header class="main-header">
-        <h1>NOORA ZARUNII VARONEN</h1>
-        <p class="subheading">PORTFOLIO</p>
-        <hr class="header-line">
-        <div class="marquee-container">                
-         <div
-    <header 
-    <!-- Muut etusivun osiot -->
-</body>
-</html>
+        <h1>ZARU</h1>
+        <p class="tagline">Designing Vibrant Spaces, Inspiring Cities</p>
+    </header>
 
-    <!-- Piilotettu valikko -->
-    <nav class="side-menu" id="side-menu">
-        <ul>
-            <li><a href="#architecture">Architecture</a></li>
-            <li><a href="#art">Art</a></li>
-            <li><a href="#texts">Texts</a></li>
-            <li><a href="#web-design">Web Design</a></li>
-            <li><a href="#me">Me</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("side-menu");
-            menu.classList.toggle("show");
-        }
-    </script>
-</body>
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const transitionElements = document.querySelectorAll(".project-link");
-
-        transitionElements.forEach(function (element) {
-            element.addEventListener("click", function (event) {
-                event.preventDefault();
-                const targetUrl = this.getAttribute("href");
-
-                // Lisää fade-out-luokka siirtymän aloittamiseksi
-                document.body.classList.add("fade-out");
-
-                // Odota siirtymän päättymistä ennen uuden sivun latausta
-                setTimeout(function () {
-                    window.location.href = targetUrl;
-                }, 500); // Vastaava aika kuin CSS-siirtymässä (0.5s)
-            });
-        });
-    });
-</script>
-
-</html>
+    <!-- Esittely -->
+    <section class="intro">
+        <h2>Meistä</h2>
+        <p>ZARU tarjoaa arkkitehtipalveluita ja konsultointia keskittyen tapahtumasuunnitteluun, konseptien kehittämiseen, kaupunkisuunnitteluun ja keskustojen elävöittämiseen.</p>
+    </section>
 
     <!-- Projektit -->
-<main>
-    <section class="project">
-        <p class="project-subheading">STUDIO CAPSTONE PROJECT</p> <!-- Pieni leipäteksti --> 
-        <a href="project1.html" class="project-link">
-            <img src="visu1finalfinal.png" alt="Projektin 1 kuva">
-        </a>
+    <section class="projects-preview">
+        <h2>Projektit</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="project1.jpg" alt="Projekti 1">
+                <p>Keskustan elävöittämissuunnitelma</p>
+            </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Projekti 2">
+                <p>Uuden konseptin tapahtumakeskus</p>
+            </div>
+        </div>
     </section>
 
-    <section class="project">
-        <p class="project-subheading">SENSORY BRICK</p> <!-- Pieni leipäteksti -->    
-        <a href="project2.html" class="project-link">
-            <img src="IMG_7187.jpg" alt="Projektin 2 kuva">
-        </a>
+    <!-- Palvelut -->
+    <section class="services">
+        <h2>Palvelut</h2>
+        <div class="services-list">
+            <div class="service">Tapahtumasuunnittelu</div>
+            <div class="service">Kaupunkisuunnittelu</div>
+            <div class="service">Tilojen käyttötarkoituksen muutokset</div>
+        </div>
     </section>
-</main>
 
+    <!-- Ota yhteyttä -->
+    <footer class="contact">
+        <p>Kiinnostuitko? <a href="mailto:info@zaru.fi">Ota yhteyttä</a></p>
+    </footer>
+</body>
+</html>
