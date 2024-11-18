@@ -1,35 +1,43 @@
-/* About-osio */
-.about-section {
-    height: 100vh;
-    background: url('images/about-background.jpg') no-repeat center center/cover;
+/* Yleiset tyylit */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Navigointi */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(255, 255, 255, 0.9);
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    color: white;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    box-sizing: border-box;
+    padding: 0 20px;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.about-content {
-    max-width: 800px;
-    background-color: rgba(0, 0, 0, 0.5); /* Tumma läpinäkyvä tausta tekstille */
-    padding: 20px;
-    border-radius: 10px;
+.site-title {
+    font-size: 1.5em;
+    color: #333;
 }
 
-.about-content h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
+.burger-menu {
+    font-size: 1.5em;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    z-index: 1001;
 }
 
-.about-content p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-/* Minimalistinen burger-valikko */
+/* Minimalistinen, kapea ja pidempi valikko */
 .side-menu {
     position: fixed;
     top: 60px;
@@ -63,4 +71,20 @@
 .side-menu a:hover {
     color: #777;
     text-decoration: underline;
+}
+
+/* Intro-osio */
+.intro-section {
+    height: 100vh;
+    background: url('kansio-nimi/Happi1.png') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro-title {
+    font-size: 3em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
 }
