@@ -44,20 +44,13 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative;
-}
-
-.intro-overlay {
-    background: rgba(0, 0, 0, 0.5); /* Läpinäkyvä kerros tekstin taakse */
-    width: 100%;
-    text-align: center;
-    padding: 20px;
 }
 
 .intro-title {
     font-size: 3em;
     font-weight: bold;
     color: #fff;
+    text-align: center;
 }
 
 /* Projektit */
@@ -93,4 +86,10 @@ body, html {
 
 .contact-section a:hover {
     text-decoration: underline;
+}
+
+.development-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
 }
