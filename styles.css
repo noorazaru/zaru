@@ -37,7 +37,7 @@ body, html {
     z-index: 1001;
 }
 
-/* Minimalistinen, kapea ja pidempi valikko */
+/* Minimalistinen burger-valikko */
 .side-menu {
     position: fixed;
     top: 60px;
@@ -87,4 +87,108 @@ body, html {
     font-weight: bold;
     color: #fff;
     text-align: center;
+}
+
+/* Footer */
+.contact-section {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+.contact-section a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.contact-section a:hover {
+    text-decoration: underline;
+}
+
+.development-note {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* About-osio */
+.about-section {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    min-height: 100vh;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #111;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.about-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.about-images img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Projektit */
+.project {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.project img {
+    max-width: 90%;
+    max-height: 60%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.project-description {
+    text-align: center;
+}
+
+.project-description h2 {
+    font-size: 2em;
+}
+
+.project-description p {
+    font-size: 1.2em;
+    color: #666;
 }
