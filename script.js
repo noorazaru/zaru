@@ -1,4 +1,8 @@
 function toggleMenu() {
     const menu = document.getElementById("menu");
-    menu.classList.toggle("show");
+    if (menu.style.display === "flex") {
+        menu.style.display = "none";
+    } else {
+        menu.style.display = "flex";
+    }
 }
