@@ -37,42 +37,6 @@ body, html {
     z-index: 1001;
 }
 
-/* Minimalistinen burger-valikko */
-.side-menu {
-    position: fixed;
-    top: 60px;
-    right: 0;
-    width: 180px;
-    height: calc(100% - 60px);
-    background: #f9f9f9;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    display: none;
-    flex-direction: column;
-    z-index: 1002;
-}
-
-.side-menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.side-menu li {
-    margin-bottom: 15px;
-}
-
-.side-menu a {
-    color: #333;
-    font-size: 1.2em;
-    text-decoration: none;
-}
-
-.side-menu a:hover {
-    color: #777;
-    text-decoration: underline;
-}
-
 /* Intro-osio */
 .intro-section {
     height: 100vh;
@@ -80,86 +44,20 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+}
+
+.intro-overlay {
+    background: rgba(0, 0, 0, 0.5); /* Läpinäkyvä kerros tekstin taakse */
+    width: 100%;
+    text-align: center;
+    padding: 20px;
 }
 
 .intro-title {
     font-size: 3em;
     font-weight: bold;
     color: #fff;
-    text-align: center;
-}
-
-/* Footer */
-.contact-section {
-    text-align: center;
-    padding: 20px;
-    background: #333;
-    color: #fff;
-}
-
-.contact-section a {
-    color: #4CAF50;
-    text-decoration: none;
-}
-
-.contact-section a:hover {
-    text-decoration: underline;
-}
-
-.development-note {
-    margin-top: 20px;
-    font-size: 0.9em;
-    color: #888;
-}
-
-/* About-osio */
-.about-section {
-    padding: 60px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f9f9;
-    min-height: 100vh;
-}
-
-.about-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    max-width: 1200px;
-    width: 100%;
-}
-
-.about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.about-text h1 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #111;
-}
-
-.about-text p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 15px;
-}
-
-.about-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-.about-images img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Projektit */
@@ -180,15 +78,19 @@ body, html {
     margin-bottom: 20px;
 }
 
-.project-description {
+/* Footer */
+.contact-section {
     text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
 }
 
-.project-description h2 {
-    font-size: 2em;
+.contact-section a {
+    color: #4CAF50;
+    text-decoration: none;
 }
 
-.project-description p {
-    font-size: 1.2em;
-    color: #666;
+.contact-section a:hover {
+    text-decoration: underline;
 }
