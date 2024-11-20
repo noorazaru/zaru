@@ -365,7 +365,7 @@ body, html {
     padding-left: 100%; /* Varmistaa tekstin ulos alkupisteestä */
     animation: marquee 10s linear infinite;
     font-size: 0.9rem; /* Pieni tekstikoko */
-    color: black; /* Tekstin väri, muuta tarpeen mukaan */
+    color: white; /* Tekstin väri, muuta tarpeen mukaan */
     white-space: nowrap;
 }
 
