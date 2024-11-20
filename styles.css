@@ -134,7 +134,7 @@ body, html {
 .awards-section {
     min-height: 100vh;
     padding: 40px 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,7 +154,7 @@ body, html {
     max-width: 600px;
     margin-bottom: 30px;
     text-align: center;
-    border-bottom: 1px solid #ddd; /* Ohut viiva erottelemaan osiot */
+    border-bottom: none; /* Ohut viiva erottelemaan osiot */
     padding-bottom: 20px;
 }
 
