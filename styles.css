@@ -356,3 +356,34 @@ body, html {
     color: #ff0000;
     border-bottom-color: #ff0000;
 }
+
+/* Liikkuva tekstibanneri */
+.moving-text-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 40px; /* Bannerin korkeus */
+    background-color: #000; /* Musta tausta */
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.moving-text {
+    display: inline-block;
+    white-space: nowrap;
+    color: #fff; /* Valkoinen teksti */
+    font-size: 1.2em;
+    font-weight: bold;
+    animation: scroll-text 20s linear infinite;
+    text-transform: uppercase;
+}
+
+/* Animaatio liikkuvalle tekstille */
+@keyframes scroll-text {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
