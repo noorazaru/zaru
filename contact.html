@@ -3,15 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - [Nimesi]</title>
+    <title>Contact - ZARU Studios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <!-- Yksinkertainen Contact-sivu -->
-    <section class="contact">
-        <h1>Contact</h1>
-        <p><a href="mailto:sahkoposti@example.com">zarucontact@gmail.com</a></p>
-        <p><a href="https://www.linkedin.com/in/nooravaronen" target="_blank">LinkedIn</a></p>
+<body class="contact-page">
+    <!-- Navigointi -->
+    <header class="main-header">
+        <a href="index.html" class="site-title">ZARU</a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="side-menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Selected projects</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="texts.html">Texts</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contact-osio -->
+    <section class="contact-section">
+        <div class="contact-content">
+            <h1>Contact ZARU Studios</h1>
+            <p>If you’d like to reach out, feel free to contact us:</p>
+            <p><a href="mailto:zarucontact@gmail.com">zarucontact@gmail.com</a></p>
+            <p><a href="https://www.linkedin.com/in/nooravaronen" target="_blank">LinkedIn</a></p>
+        </div>
     </section>
+
+    <script src="script.js"></script>
 </body>
 </html>
