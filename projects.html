@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - ZARU Studios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigointi -->
+    <header class="main-header">
+        <a href="index.html" class="site-title">ZARU</a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="side-menu" id="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projektit-osio -->
+    <section class="projects-section">
+        <h1>Selected Projects</h1>
+        <div class="projects-grid">
+            <!-- Projekti 1 -->
+            <div class="project-item">
+                <a href="project1.html">
+                    <img src="kansio-nimi/Happi1" alt="Project 1">
+                    <div class="project-overlay">
+                        <p>Happi Studio</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Projekti 2 -->
+            <div class="project-item">
+                <a href="project2.html">
+                    <img src="kansio-nimi/project2-thumbnail.jpg" alt="Project 2">
+                    <div class="project-overlay">
+                        <p>Community Center</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Projekti 3 -->
+            <div class="project-item">
+                <a href="project3.html">
+                    <img src="kansio-nimi/project3-thumbnail.jpg" alt="Project 3">
+                    <div class="project-overlay">
+                        <p>Urban Revitalization</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
