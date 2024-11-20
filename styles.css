@@ -270,3 +270,53 @@ body, html {
     color: #32a852;
     border-bottom-color: #32a852;
 }
+
+/* Contact-sivu */
+.contact-page {
+    background-color: #000; /* Musta tausta */
+    color: #fff; /* Valkoinen teksti */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Contact-osio */
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.contact-content {
+    max-width: 600px; /* Kapea tekstialue */
+    text-align: center;
+}
+
+.contact-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.contact-content p {
+    font-size: 1.2em; /* Sama kuin about-sivun teksti */
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd; /* Pehmeämpi valkoinen */
+}
+
+.contact-content a {
+    color: #4CAF50; /* Korosteväri linkeille */
+    text-decoration: none;
+    border-bottom: 1px solid #4CAF50;
+}
+
+.contact-content a:hover {
+    color: #32a852;
+    border-bottom-color: #32a852;
+}
