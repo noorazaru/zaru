@@ -3,9 +3,15 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #fff; /* Valkoinen tausta oletuksena */
+    color: #000; /* Musta teksti oletuksena */
+    scroll-behavior: smooth;
+}
+
+/* About-sivun erityinen tyyli */
+.about-page body {
     background-color: #000; /* Musta tausta */
     color: #fff; /* Valkoinen teksti */
-    scroll-behavior: smooth;
 }
 
 /* Navigointi */
@@ -15,34 +21,35 @@ body, html {
     left: 0;
     width: 100%;
     height: 60px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(255, 255, 255, 0.9); /* Valkoinen tausta */
     display: flex;
     align-items: center;
     padding: 0 20px;
     z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .site-title {
     font-size: 1.5em;
-    color: #fff;
+    color: #000; /* Musta logo */
     text-decoration: none;
     font-weight: bold;
 }
 
 .site-title:hover {
-    color: #777;
+    color: #777; /* Vaaleampi hover-efekti */
 }
 
-/* Burger-valikko oikeassa alareunassa */
+/* Burger-valikko */
 .burger-menu {
     font-size: 1.5em;
-    color: #fff;
+    color: #000; /* Musta burger-valikko */
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     padding: 10px;
-    border: 1px solid #fff;
+    border: 1px solid #000;
     cursor: pointer;
     z-index: 1001;
 }
@@ -50,19 +57,20 @@ body, html {
 /* Minimalistinen burger-valikko */
 .side-menu {
     position: fixed;
-    top: 0;
+    top: 60px;
     right: 0;
     width: 200px;
-    height: 100%;
-    background: #000; /* Musta tausta */
+    height: calc(100% - 60px);
+    background: #fff; /* Valkoinen tausta */
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
-    display: none; /* Oletuksena piilotettu */
+    display: none;
     flex-direction: column;
     z-index: 1002;
 }
 
 .side-menu.show {
-    display: flex; /* Näkyy, kun "show" luokka lisätään */
+    display: flex;
 }
 
 .side-menu ul {
@@ -76,80 +84,18 @@ body, html {
 }
 
 .side-menu a {
-    color: #fff; /* Valkoiset linkit */
+    color: #000; /* Mustat linkit */
     font-size: 1.2em;
     text-decoration: none;
 }
 
 .side-menu a:hover {
-    color: #ff5050; /* Punainen hover-efekti */
+    color: #777; /* Vaaleampi hover-efekti */
 }
 
-/* Liikkuva tekstibanneri */
-.moving-text-container {
-    position: fixed;
-    top: 60px;
-    width: 100%;
-    height: 40px;
-    background-color: #000;
-    overflow: hidden;
-    z-index: 999;
-}
-
-.moving-text {
-    display: inline-block;
-    white-space: nowrap;
-    color: #fff;
-    font-size: 1.2em;
-    font-weight: bold;
-    animation: scroll-text 40s linear infinite;
-    text-transform: uppercase;
-}
-
-@keyframes scroll-text {
-    from {
-        transform: translateX(100%);
-    }
-    to {
-        transform: translateX(-100%);
-    }
-}
-
-/* Intro-osio */
-.intro-section {
-    height: calc(100vh - 100px); /* Header ja banneri huomioitu */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url('kansio-nimi/Happi1.png') no-repeat center center/cover;
-}
-
-.intro-title {
-    font-size: 3em;
-    font-weight: bold;
-    color: #fff;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
-}
-
-/* Footer */
-.contact-section {
-    text-align: center;
-    padding: 20px;
-    background: #000;
-}
-
-.contact-section a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.contact-section a:hover {
-    color: #ff5050; /* Punainen hover-efekti */
-}
 /* Sivujen sisältö */
 h1 {
-    margin-top: 100px; /* Varmistaa, että otsikot eivät mene päällekkäin logon kanssa */
+    margin-top: 100px;
     font-size: 2.5em;
     font-weight: bold;
     text-align: center;
@@ -159,18 +105,16 @@ p {
     font-size: 1.2em;
     line-height: 1.6;
     margin: 20px auto;
-    max-width: 600px; /* Kapea tekstialue */
+    max-width: 600px;
     text-align: center;
-    color: #ddd;
+    color: #000; /* Musta teksti */
 }
 
 a {
-    color: #ff5050;
+    color: #000; /* Mustat linkit */
     text-decoration: none;
-    border-bottom: 1px solid #ff5050;
 }
 
 a:hover {
-    color: #ff7777;
-    border-bottom-color: #ff7777;
+    color: #777;
 }
