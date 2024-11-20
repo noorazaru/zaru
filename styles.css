@@ -427,12 +427,12 @@ body, html {
 }
 
 .project-item:hover .project-overlay {
-    opacity: 1; /* Näytä overlay hoverilla */
+    opacity: 2; /* Näytä overlay hoverilla */
 }
 
 .project-overlay p {
     color: #fff; /* Valkoinen teksti */
-    font-size: 1.5em;
+    font-size: 1em;
     font-weight: bold;
     text-align: center;
     text-transform: uppercase;
