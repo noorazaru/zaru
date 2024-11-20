@@ -13,9 +13,8 @@ body, html {
     left: 0;
     width: 100%;
     height: 60px;
-    background: rgba(0, 0, 0, 0.9); /* Tumma tausta */
+    background: rgba(0, 0, 0, 0.9);
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 0 20px;
     z-index: 1000;
@@ -23,7 +22,7 @@ body, html {
 
 .site-title {
     font-size: 1.5em;
-    color: #fff; /* Valkoinen logo */
+    color: #fff;
     text-decoration: none;
     font-weight: bold;
     z-index: 1001;
@@ -33,9 +32,16 @@ body, html {
     color: #777;
 }
 
+/* Burger-valikko oikeassa alareunassa */
 .burger-menu {
     font-size: 1.5em;
-    color: #fff; /* Valkoinen burger-valikko */
+    color: #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    border-radius: 50%;
     cursor: pointer;
     z-index: 1001;
 }
@@ -43,11 +49,11 @@ body, html {
 /* Minimalistinen burger-valikko */
 .side-menu {
     position: fixed;
-    top: 60px;
+    top: 0;
     right: 0;
     width: 200px;
-    height: calc(100% - 60px);
-    background: #000; /* Musta tausta */
+    height: 100%;
+    background: #000;
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     display: none; /* Oletuksena piilotettu */
@@ -71,22 +77,22 @@ body, html {
 }
 
 .side-menu a {
-    color: #fff; /* Valkoiset linkit */
+    color: #fff;
     font-size: 1.2em;
     text-decoration: none;
 }
 
 .side-menu a:hover {
-    color: #ff5050; /* Punainen hover-efekti */
+    color: #ff5050;
 }
 
 /* Liikkuva tekstibanneri */
 .moving-text-container {
     position: fixed;
-    top: 60px; /* Burger-valikon alapuolella */
+    top: 60px;
     width: 100%;
-    height: 40px; /* Bannerin korkeus */
-    background-color: #000; /* Musta tausta */
+    height: 40px;
+    background-color: #000;
     overflow: hidden;
     z-index: 999;
 }
@@ -94,14 +100,13 @@ body, html {
 .moving-text {
     display: inline-block;
     white-space: nowrap;
-    color: #fff; /* Valkoinen teksti */
+    color: #fff;
     font-size: 1.2em;
     font-weight: bold;
-    animation: scroll-text 40s linear infinite; /* Hidastettu animaatio */
+    animation: scroll-text 40s linear infinite;
     text-transform: uppercase;
 }
 
-/* Animaatio liikkuvalle tekstille */
 @keyframes scroll-text {
     from {
         transform: translateX(100%);
@@ -113,12 +118,12 @@ body, html {
 
 /* Intro-osio */
 .intro-section {
-    height: calc(100vh - 100px); /* Ota huomioon header ja liikkuva teksti */
+    height: calc(100vh - 100px);
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: url('kansio-nimi/Happi1.png') no-repeat center center/cover; /* Taustakuva */
+    background: url('kansio-nimi/Happi1.png') no-repeat center center/cover;
 }
 
 .intro-title {
@@ -127,7 +132,6 @@ body, html {
     color: #fff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
-
 
 /* Footer */
 .contact-section {
@@ -146,129 +150,3 @@ body, html {
     color: #ff0000;
 }
 
-/* Awards-sivu */
-.awards-page {
-    background-color: #000; /* Musta tausta */
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.awards-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.awards-content {
-    max-width: 600px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.awards-content h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.awards-content h2 {
-    font-size: 1.8em;
-    margin-bottom: 15px;
-}
-
-.awards-content p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #ddd;
-}
-
-.awards-content a {
-    color: #ff0000;
-    text-decoration: none;
-    border-bottom: 1px solid #ff0000;
-}
-
-.awards-content a:hover {
-    color: #ff5050;
-    border-bottom-color: #ff5050;
-}
-
-/* About-sivu */
-.about-page {
-    background-color: #000; /* Musta tausta */
-    color: #fff;
-    font-family: 'Arial', sans-serif;
-}
-
-.about-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 40px 20px;
-    text-align: center;
-}
-
-.about-content {
-    max-width: 600px;
-    text-align: center;
-}
-
-.about-content h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-.about-content p {
-    font-size: 1em;
-    line-height: 1.6;
-    color: #ddd;
-}
-
-/* Contact-sivu */
-.contact-page {
-    background-color: #000; /* Musta tausta */
-    color: #fff;
-}
-
-.contact-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 0 20px;
-    text-align: center;
-}
-
-.contact-content {
-    max-width: 600px;
-    text-align: center;
-}
-
-.contact-content h1 {
-    font-size: 2.5em;
-    font-weight: bold;
-}
-
-.contact-content p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    color: #ddd;
-}
-
-.contact-content a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 1px solid #fff;
-}
-
-.contact-content a:hover {
-    color: #ff0000;
-}
