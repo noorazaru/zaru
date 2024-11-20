@@ -10,28 +10,19 @@
     <!-- Navigointi -->
     <header class="main-header">
         <a href="index.html" class="site-title">ZARU</a>
-    </header>
-
-    <!-- Burger-valikko -->
-    <div class="burger-menu" onclick="toggleMenu()">
-        ☰
-    </div>
-    <nav class="side-menu" id="menu">
-        <ul>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="awards.html">Awards</a></li>
-            <li><a href="texts.html">Texts</a></li>
-            <li><a href="about.html">About us</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Liikkuva tekstibanneri -->
-    <div class="moving-text-container">
-        <div class="moving-text">
-            I NEED SPACE FOR MY CREATIVITY. I NEED AN ART STUDIO. I NEED SPACE FOR MY ART. I NEED MUSIC STUDIO. I NEED GALLERY SPACE.
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
         </div>
-    </div>
+        <nav class="side-menu" id="menu">
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="awards.html">Awards</a></li>
+                <li><a href="texts.html">Texts</a></li>
+                <li><a href="about.html">About ZARU</a></li>
+                <li><a href="contact.html">Contact info</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Etusivun intro -->
     <div class="intro-section">
@@ -44,12 +35,6 @@
         <p class="development-note">2024 ZARU Studio ©</p>
     </footer>
 
-    <script>
-        // JavaScript burger-valikon toiminnallisuuteen
-        function toggleMenu() {
-            const menu = document.getElementById('menu');
-            menu.classList.toggle('show');
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
