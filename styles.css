@@ -192,3 +192,81 @@ body, html {
     margin-top: 20px;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Hento varjo ilman pyöristyksiä */
 }
+
+/* About-sivu */
+.about-page {
+    background-color: #000; /* Musta tausta */
+    color: #fff; /* Valkoinen teksti */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* Navigointi */
+.main-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    z-index: 1000;
+}
+
+.site-title {
+    font-size: 1.5em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.burger-menu {
+    font-size: 1.5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* About-osio */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about-content {
+    max-width: 600px; /* Kapea tekstialue */
+    text-align: center;
+}
+
+.about-content h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    letter-spacing: 0.05em;
+}
+
+.about-content p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #ddd; /* Pehmeämpi valkoinen teksti */
+}
+
+.about-content a {
+    color: #4CAF50;
+    text-decoration: none;
+    border-bottom: 1px solid #4CAF50; /* Alleviivaus */
+}
+
+.about-content a:hover {
+    color: #32a852;
+    border-bottom-color: #32a852;
+}
