@@ -116,7 +116,7 @@ body, html {
 }
 
 .contact-section a {
-    color: #4CAF50;
+    color: #fff;
     text-decoration: none;
 }
 
@@ -127,7 +127,7 @@ body, html {
 .development-note {
     margin-top: 20px;
     font-size: 0.9em;
-    color: #888;
+    color: #fff;
 }
 
 /* Awards-osio */
