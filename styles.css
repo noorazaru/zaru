@@ -254,8 +254,8 @@ body, html {
 }
 
 .about-content p {
-    font-size: 1.2em;
-    line-height: 1.8;
+    font-size: 1em;
+    line-height: 1.6;
     margin-bottom: 20px;
     color: #ddd; /* Pehmeämpi valkoinen teksti */
 }
