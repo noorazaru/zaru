@@ -130,75 +130,68 @@ body, html {
     color: #888;
 }
 
-/* Awards-sivu */
-.awards-page {
-    background-color: #000; /* Musta tausta */
-    color: #fff; /* Valkoinen teksti */
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
-
 /* Awards-osio */
 .awards-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     padding: 40px 20px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
 }
 
-.awards-content {
-    max-width: 600px; /* Kapea tekstialue */
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.awards-content h1 {
+.awards-section h1 {
     font-size: 2.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
-    letter-spacing: 0.05em;
+    margin-bottom: 30px;
+    color: #222;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Pieni väli kirjainten välillä */
 }
 
-.awards-content h2 {
-    font-size: 1.8em;
+.award-item {
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Ohut viiva erottelemaan osiot */
+    padding-bottom: 20px;
+}
+
+.award-item h2 {
+    font-size: 1.5em;
+    color: #111;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.award-item p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #555;
     margin-bottom: 15px;
 }
 
-.awards-content p {
-    font-size: 1.2em;
-    line-height: 1.8;
-    margin-bottom: 20px;
-    color: #ddd; /* Pehmeämpi valkoinen */
-}
-
-.awards-content a {
-    color: #ff0000; /* Punainen linkki */
+.award-item a {
+    color: #007acc;
     text-decoration: none;
-    border-bottom: 1px solid #ff0000;
+    border-bottom: 1px solid #007acc; /* Ohut alleviivaus linkeille */
+    transition: color 0.3s, border-bottom-color 0.3s;
 }
 
-.awards-content a:hover {
-    color: #ff5050;
-    border-bottom-color: #ff5050;
+.award-item a:hover {
+    color: #0055a5;
+    border-bottom-color: #0055a5;
 }
 
-/* Kuva */
-.award-image {
-    margin-top: 20px;
-    text-align: center;
-}
-
+/* Kuva palkinnon alle */
 .award-image img {
-    max-width: 100%;
-    height: auto;
-    border: none;
+    max-width: 80%;
+    margin-top: 20px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Hento varjo ilman pyöristyksiä */
 }
-
 
 /* About-sivu */
 .about-page {
