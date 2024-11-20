@@ -3,7 +3,6 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    color: #333;
     scroll-behavior: smooth;
 }
 
@@ -14,7 +13,7 @@ body, html {
     left: 0;
     width: 100%;
     height: 60px;
-    background: rgba(0, 0, 0, 0.9);
+    background: rgba(0, 0, 0, 0.9); /* Tumma tausta */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,10 +23,7 @@ body, html {
 
 .site-title {
     font-size: 1.5em;
-    color: #fff;
-    position: fixed;
-    top: 10px;
-    left: 20px;
+    color: #fff; /* Valkoinen logo */
     text-decoration: none;
     font-weight: bold;
     z-index: 1001;
@@ -39,22 +35,19 @@ body, html {
 
 .burger-menu {
     font-size: 1.5em;
+    color: #fff; /* Valkoinen burger-valikko */
     cursor: pointer;
-    position: fixed;
-    top: 15px;
-    right: 20px;
     z-index: 1001;
-    color: #fff;
 }
 
-/* Minimalistinen, pitkä valikko */
+/* Minimalistinen burger-valikko */
 .side-menu {
     position: fixed;
     top: 60px;
     right: 0;
     width: 200px;
     height: calc(100% - 60px);
-    background: #000;
+    background: #000; /* Musta tausta */
     box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
     display: none; /* Oletuksena piilotettu */
@@ -65,7 +58,6 @@ body, html {
 
 .side-menu.show {
     display: flex; /* Näkyy, kun "show" luokka lisätään */
-    transform: translateX(0);
 }
 
 .side-menu ul {
@@ -79,19 +71,19 @@ body, html {
 }
 
 .side-menu a {
-    color: #fff;
+    color: #fff; /* Valkoiset linkit */
     font-size: 1.2em;
     text-decoration: none;
 }
 
 .side-menu a:hover {
-    color: #ff5050;
+    color: #ff5050; /* Punainen hover-efekti */
 }
 
 /* Liikkuva tekstibanneri */
 .moving-text-container {
     position: fixed;
-    top: 60px;
+    top: 60px; /* Burger-valikon alapuolella */
     width: 100%;
     height: 40px; /* Bannerin korkeus */
     background-color: #000; /* Musta tausta */
@@ -135,6 +127,7 @@ body, html {
     color: #fff;
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
 }
+
 
 /* Footer */
 .contact-section {
