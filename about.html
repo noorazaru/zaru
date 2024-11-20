@@ -6,7 +6,7 @@
     <title>About - ZARU Studios</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body class="about-page">
+<body>
     <!-- Navigointi -->
     <header class="main-header">
         <a href="index.html" class="site-title">ZARU</a>
@@ -18,8 +18,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="projects.html">Selected projects</a></li>
                 <li><a href="awards.html">Awards</a></li>
-                <li><a href="texts.html">Texts</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -38,6 +37,12 @@
         </div>
     </section>
 
-    <script src="script.js"></script>
+    <script>
+        // JavaScript burger-valikon toiminnallisuuteen
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
 </body>
 </html>
