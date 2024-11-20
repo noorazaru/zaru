@@ -340,12 +340,12 @@ body, html {
 }
 
 .contact-content a {
-    color: #4CAF50; /* Korosteväri linkeille */
+    color: #fff; /* Korosteväri linkeille valkoisella */
     text-decoration: none;
-    border-bottom: 1px solid #4CAF50;
+    border-bottom: 1px solid #fff;
 }
 
 .contact-content a:hover {
-    color: #32a852;
-    border-bottom-color: #32a852;
+    color: #ff0000;
+    border-bottom-color: #ff0000;
 }
