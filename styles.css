@@ -133,7 +133,7 @@ body, html {
 /* Awards-osio */
 .awards-section {
     min-height: 100vh;
-    padding: 60px 20px;
+    padding: 40px 20px;
     background-color: #f9f9f9;
     display: flex;
     flex-direction: column;
@@ -143,48 +143,52 @@ body, html {
 
 .awards-section h1 {
     font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #111;
+    margin-bottom: 30px;
+    color: #222;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em; /* Pieni väli kirjainten välillä */
 }
 
 .award-item {
-    background: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px; /* Teksti on kapeampi */
-    text-align: left;
+    max-width: 600px;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 1px solid #ddd; /* Ohut viiva erottelemaan osiot */
+    padding-bottom: 20px;
 }
 
 .award-item h2 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-    text-align: center;
+    font-size: 1.5em;
+    color: #111;
+    margin-bottom: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
 }
 
 .award-item p {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 1.6;
     color: #555;
-    text-align: center;
+    margin-bottom: 15px;
 }
 
 .award-item a {
-    color: #0055a5;
+    color: #007acc;
     text-decoration: none;
-    font-weight: bold;
+    border-bottom: 1px solid #007acc; /* Ohut alleviivaus linkeille */
+    transition: color 0.3s, border-bottom-color 0.3s;
 }
 
 .award-item a:hover {
-    text-decoration: underline;
+    color: #0055a5;
+    border-bottom-color: #0055a5;
 }
 
 /* Kuva palkinnon alle */
 .award-image img {
-    max-width: 80%; /* Skaalaa kuvan leveyttä */
+    max-width: 80%;
     margin-top: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1); /* Hento varjo ilman pyöristyksiä */
 }
