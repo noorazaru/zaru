@@ -351,7 +351,7 @@ body, html {
 }
 .marquee {
     position: fixed;
-    top: 70px; /* Sijoitus logon ja burgervalikon alapuolelle */
+    top: 60px; /* Sijoitus logon ja burgervalikon alapuolelle */
     left: 0;
     width: 100%;
     overflow: hidden;
