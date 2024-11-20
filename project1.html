@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happi Studio - ZARU Studios</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigointi -->
+    <header class="main-header">
+        <a href="index.html" class="site-title">ZARU</a>
+        <div class="burger-menu" onclick="toggleMenu()">
+            ☰
+        </div>
+        <nav class="side-menu" id="menu">
+            <ul>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Projektin sisältö -->
+    <section class="project-page">
+        <h1>Happi Studio</h1>
+        <div class="project-gallery">
+            <img src="kansio-nimi/project1-image1.jpg" alt="Happi Studio Image 1">
+            <p>Description of the first image...</p>
+            <img src="kansio-nimi/project1-image2.jpg" alt="Happi Studio Image 2">
+            <p>Description of the second image...</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
