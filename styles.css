@@ -3,6 +3,8 @@ body, html {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
+    background-color: #000; /* Musta tausta */
+    color: #fff; /* Valkoinen teksti */
     scroll-behavior: smooth;
 }
 
@@ -25,7 +27,6 @@ body, html {
     color: #fff;
     text-decoration: none;
     font-weight: bold;
-    z-index: 1001;
 }
 
 .site-title:hover {
@@ -41,7 +42,7 @@ body, html {
     right: 20px;
     background: rgba(0, 0, 0, 0.8);
     padding: 10px;
-    border-radius: 50%;
+    border: 1px solid #fff;
     cursor: pointer;
     z-index: 1001;
 }
@@ -53,13 +54,11 @@ body, html {
     right: 0;
     width: 200px;
     height: 100%;
-    background: #000;
-    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+    background: #000; /* Musta tausta */
     padding: 20px;
     display: none; /* Oletuksena piilotettu */
     flex-direction: column;
     z-index: 1002;
-    transition: transform 0.3s ease-in-out;
 }
 
 .side-menu.show {
@@ -77,13 +76,13 @@ body, html {
 }
 
 .side-menu a {
-    color: #fff;
+    color: #fff; /* Valkoiset linkit */
     font-size: 1.2em;
     text-decoration: none;
 }
 
 .side-menu a:hover {
-    color: #ff5050;
+    color: #ff5050; /* Punainen hover-efekti */
 }
 
 /* Liikkuva tekstibanneri */
@@ -118,7 +117,7 @@ body, html {
 
 /* Intro-osio */
 .intro-section {
-    height: calc(100vh - 100px);
+    height: calc(100vh - 100px); /* Header ja banneri huomioitu */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -137,16 +136,14 @@ body, html {
 .contact-section {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: #fff;
+    background: #000;
 }
 
 .contact-section a {
-    color: #4CAF50;
+    color: #fff;
     text-decoration: none;
 }
 
 .contact-section a:hover {
-    color: #ff0000;
+    color: #ff5050; /* Punainen hover-efekti */
 }
-
