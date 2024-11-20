@@ -242,7 +242,7 @@ body, html {
 }
 
 .about-content {
-    max-width: 600px; /* Kapea tekstialue */
+    max-width: 400px; /* Kapea tekstialue */
     text-align: center;
 }
 
@@ -261,14 +261,14 @@ body, html {
 }
 
 .about-content a {
-    color: #4CAF50;
+    color: #fff;
     text-decoration: none;
     border-bottom: 1px solid #fff; /* Alleviivaus */
 }
 
 .about-content a:hover {
     color: #fff;
-    border-bottom-color: #32a852;
+    border-bottom-color: #fff;
 }
 
 /* Contact-sivu */
