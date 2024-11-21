@@ -133,7 +133,7 @@ body, html {
 /* Awards-osio */
 .awards-section {
     min-height: 100vh;
-    padding: 40px 20px;
+    padding: 40px 40px;
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -154,7 +154,7 @@ body, html {
     max-width: 600px;
     margin-bottom: 30px;
     text-align: center;
-    border-bottom: none; /* Ohut viiva erottelemaan osiot */
+    border-bottom: none; 
     padding-bottom: 20px;
 }
 
